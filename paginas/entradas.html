@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entradas</title>
-    <link rel="stylesheet" type="text/css" href="../Estilos/contacto.css"
+    <link rel="stylesheet" type="text/css" href="../Estilos/entradas.css">
 </head>
 <body>
-    <div id="contenedor">
-        <form>
+    <div id="caja-formulario">
+        <form id="form-entradas" action="#" onsubmit="return Total()" method="post">
             <div id="menores">
                 <div id="imgmenor"></div>
                 <div id="contmenor">
@@ -35,6 +35,10 @@
                     <label for="cantjubilados">Ingrese la cantidad de entradas</label>
                     <input type="number" id="cantjubilados" name="cantjubilados">
                 </div>
+            </div>
+            <div id="boton">
+                <button type="submit">Total a pagar</button>
+                <span id="total"></span>
             </div>
         </form>
     </div>
