@@ -2,7 +2,6 @@ arrayimg = ["imagenes/png-jpg/edificio2.jpg", "imagenes/png-jpg/Ballena Beluga.j
     "imagenes/png-jpg/edificio1.png"]
 
 i = 0
-idimg= 0
 
 function imgchange(num) {
     switch (num) {
