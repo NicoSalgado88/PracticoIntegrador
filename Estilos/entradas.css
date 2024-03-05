@@ -1,11 +1,12 @@
-body {
+/*body {
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
+   
+}*/
 
 #caja-formulario {
     background-color: #ffffff;
@@ -33,6 +34,10 @@ label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+}
+
+input:focus{
+    background-color: #6cb6ff;
 }
 
 input {

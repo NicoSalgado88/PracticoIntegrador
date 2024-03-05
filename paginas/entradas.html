@@ -5,23 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entradas</title>
     <link rel="stylesheet" type="text/css" href="../Estilos/entradas.css">
+    <link rel="stylesheet" type="text/css" href="../global.css">
     <link rel="icon" href="../imagenes/svg/logo.svg">
+    <script src="../funciones/entrada.js"></script>
 </head>
 <body>
+    <header>
+        <div class="topnav">
+            <img src="../imagenes/png-jpg/logo trans.png" alt="" id="mainlogo">
+            <a href="../index.html" class="active">Inicio</a>
+            <a href="../paginas/entradas.html">Entradas</a>
+            <a href="../paginas/contacto.html">Contacto</a>
+            <a href="../paginas/esbozo.html">Holaola</a>
+        </div>
+    </header>
     <div id="caja-formulario">
         <form id="form-entradas" action="#" onsubmit="return Total()" method="post">
             <div id="menores">
                 <div class="imagen"></div>
+
                 <div id="contmenor">
                     <h1>Menores ($13.000)</h1>
                     <p>Menores entre 5 a 10 años</p>
-                    <label for="cantmenor">Ingrese la cantidad de entradas</label>
+                    <label for="cantmenor">Ingrese la cantidad de entradas</label><br>
                     <input type="number" id="cantmenor" name="cantmenor">
                     <span class="errorcant"></span>
                 </div>
             </div>
             <div id="mayores">
                 <div class="imagen"></div>
+
                 <div id="contmayor">
                     <h1>Mayores ($16.000)</h1>
                     <p>Mayores entre 11 a 65 años</p>
