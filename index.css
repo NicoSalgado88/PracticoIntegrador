@@ -130,6 +130,21 @@ div#thumbnailcrs {
     margin-top: -1%;
 }
 
+img.active {
+    border-color: white;
+    border-style: solid;
+}
+
+img.off {
+    border-color: black;
+    border-style: solid;
+}
+
+img:thumbnail {
+    border-color: black;
+    border-style: solid;
+}
+
 div#thumbnailcrs img {
     max-width: 5%;
     max-height: 5%;
@@ -138,7 +153,6 @@ div#thumbnailcrs img {
     border-top: 2px;
     border-style: solid;
     margin: 10px;
-    border-color: black;
 }
 
 div#thumbnailcrs img:hover {
