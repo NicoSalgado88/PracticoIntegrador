@@ -1,0 +1,83 @@
+div#main1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    background-color: #62d395;
+    width: 600px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+div#main1 img {
+    width: 20%;
+    height: 20%;
+    float: right;
+    margin-top: -30px;
+    margin-right: -35px;
+}
+
+h3#maintitle {
+    text-align: center;
+}
+
+div#main2 {
+    float: left;
+    border-radius: 5px;
+    background-color: #e2b26a;
+    max-width: max-content;
+    width: 45%;
+    height: 80px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 1%;
+    margin-left: 2.5%;
+    margin-bottom: 3%;
+}
+
+div#main2 img {
+    height: 60%;
+    margin-top: -30px;
+    margin-right: -20px;
+    max-width: fit-content;
+    float: right;
+}
+
+div#main3 {
+    float: right;
+    border-radius: 5px;
+    background-color: #e26a6a;
+    max-width: max-content;
+    width: 45%;
+    height: 80px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 1%;
+    margin-right: 2.5%;
+    margin-bottom: 3%;
+}
+
+div#main3 img {
+    height: 60%;
+    margin-top: -30px;
+    margin-right: -20px;
+    max-width: fit-content;
+    float: right;
+}
+
+div#carousel{
+    clear: both;
+    overflow: auto;
+    margin: auto;
+}
+
+div#carousel img {
+    display: flex;
+    max-width: fit-content;
+    max-height: fit-content;
+    width: 50%;
+    
+}
