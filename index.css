@@ -4,6 +4,8 @@ div#main1 {
     margin-right: auto;
     border-radius: 50px;
     background-color: #62d395;
+    background-image:url(imagenes/png-jpg/bg1.png);
+    background-size: 100%;
     width: 600px;
     text-align: center;
     padding-top: 15px;
@@ -28,6 +30,8 @@ div#main2 {
     float: left;
     border-radius: 5px;
     background-color: #e2b26a;
+    background-image:url(imagenes/png-jpg/bg2.png);
+    background-size: 100%;
     max-width: max-content;
     width: 45%;
     height: 80px;
@@ -50,6 +54,8 @@ div#main3 {
     float: right;
     border-radius: 5px;
     background-color: #e26a6a;
+    background-image:url(imagenes/png-jpg/bg3.png);
+    background-size: 100%;
     max-width: max-content;
     width: 45%;
     height: 80px;
@@ -69,15 +75,40 @@ div#main3 img {
 }
 
 div#carousel{
-    clear: both;
-    overflow: auto;
-    margin: auto;
+    width: auto;
+    height: auto;
+    clear:both;
+    margin:0 auto;
 }
 
 div#carousel img {
-    display: flex;
-    max-width: fit-content;
-    max-height: fit-content;
-    width: 50%;
-    
+    padding-left: 325px;
+    max-width: 60%;
+    max-height: 60%;
+    height: auto;
+    width: auto;
+}
+
+button.crs {
+    text-align: center;
+    width: 20%;
+    height: 10%;
+    font-size: 30px;
+    background-color: #9ba9d6;
+    border-color:#9ba9d6;
+    border-radius: 30%;
+    vertical-align: middle;
+    padding-bottom: 0.5%;
+    border-style: none;
+}
+
+button.crs:hover {
+    background-color: #c8d5ff;
+}
+
+div#btn1 {
+    margin:auto;
+    padding-left: 500px;
+    padding-top: -10px;
+    padding-bottom: 10px;
 }

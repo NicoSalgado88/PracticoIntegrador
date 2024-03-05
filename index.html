@@ -9,6 +9,8 @@
     <title>Document</title>
 </head>
 
+<script src="index.js"></script>
+
 <body>
     <header>
         <div class="topnav">
@@ -31,28 +33,33 @@
         <div>
             <div id="main2">
                 <img src="imagenes\ilustraciones\Burbuja1.png" alt="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni quam culpa nobis exercitationem delectus
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni quam culpa nobis exercitationem
+                delectus
                 mollitia, itaque recusandae minima tempore ipsam atque sit explicabo dolorem expedita cum, iure, eum
                 impedit.
-            </div> 
-            
+            </div>
+
             <div id="main3">
                 <img src="imagenes\ilustraciones\Burbuja3.png" alt="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni quam culpa nobis exercitationem delectus
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni quam culpa nobis exercitationem
+                delectus
                 mollitia, itaque recusandae minima tempore ipsam atque sit explicabo dolorem expedita cum, iure, eum
                 impedit.
             </div>
         </div>
 
+        <h3 id="maintitle">Galería</h5>
+
         <!--- carousel -->
         <div id="carousel">
-        <div id="divimg">
-            <img src="imagenes\png-jpg\Ballena Beluga.jpg" alt="">
-            <img src="imagenes\png-jpg\Ballena Beluga.jpg" alt="">
-            <img src="imagenes\png-jpg\Ballena Beluga.jpg" alt="">
-        </div>
-        <div id="next" onclick="imgchange(+1)">˃</div>
-        <div id="previous" onclick="imgchange(-1)">˂</div>
+            <div id="divimg">
+                <img src="imagenes\png-jpg\edificio2.jpg" alt="" id="imgcrs">
+            </div>
+            <br>
+            <div id="btn1">
+                <button onclick="imgchange(-1)" class="crs">˂</button>
+                <button onclick="imgchange(+1)" class="crs">></button>
+            </div>
         </div>
 
         <!--- footer -->
