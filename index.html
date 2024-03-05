@@ -9,9 +9,7 @@
     <title>Document</title>
 </head>
 
-<script src="index.js"></script>
-
-<body>
+<body onload="imgt()">
     <header>
         <div class="topnav">
             <img src="imagenes\png-jpg\logo trans.png" alt="" id="mainlogo">
@@ -50,25 +48,35 @@
 
         <h3 id="maintitle">Galería</h5>
 
-        <!--- carousel -->
-        <div id="carousel">
-            <div id="divimg">
-                <img src="imagenes\png-jpg\edificio2.jpg" alt="" id="imgcrs">
+            <!--- carousel -->
+            <div id="carousel">
+                <div id="divimg">
+                    <img src="imagenes\png-jpg\edificio2.jpg" alt="" id="imgcrs">
+                </div>
+                <br>
             </div>
-            <br>
+            <div id="thumbnailcrs"></div>
             <div id="btn1">
-                <button onclick="imgchange(-1)" class="crs">˂</button>
-                <button onclick="imgchange(+1)" class="crs">></button>
+                <div onclick="imgchange(-1)" class="crs">˂</div>
+                <div onclick="imgchange(+1)" class="crs">></div>
             </div>
-        </div>
 
-        <!--- footer -->
-        <footer>
-            <hr>
-            <p>Redes sociales bla bla bal bla vla </p>
-            <hr>
-            <img src="imagenes\ilustraciones\Pie.png" alt="" id="sfoot">
-        </footer>
+
+            <!--- footer -->
+            <footer>
+                <hr>
+                <div class="social">
+                    <p>Pueden seguirnos en: 
+                    <a href="paginas\esbozo.html"><img src="imagenes\png-jpg\logos\LogoYT.png"></a>
+                    <a href="paginas\esbozo.html"></a><img src="imagenes\png-jpg\logos\LogoTwit.png"></a>
+                    <a href="paginas\esbozo.html"></a><img src="imagenes\png-jpg\logos\LogoInsta.png"></a>
+                </p>
+                </div>
+                <hr>
+                <img src="imagenes\ilustraciones\Pie.png" alt="" id="sfoot">
+            </footer>
 </body>
+
+<script src="index.js"></script>
 
 </html>

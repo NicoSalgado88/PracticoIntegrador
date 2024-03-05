@@ -59,3 +59,14 @@ div.topnav img {
 footer {
     clear: both;
 }
+
+div.social {
+    text-align: left;
+}
+
+div.social img {
+    max-height: 10%;
+    height: 2%;
+    width: 2%;
+    padding-left: 1%;
+}
