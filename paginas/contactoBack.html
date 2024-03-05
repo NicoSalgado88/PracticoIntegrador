@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="icon" href="../imagenes/svg/logo.svg" />
+    <link rel="stylesheet" href="../estilos/contacto.css" />
+  </head>
+  <body>
+    <div id="caja-formulario">
+      <h1 id="h1-contacto">Contacto</h1>
+
+      <form id="formulario-contacto" method="post" action="#" onsubmit="">
+        <div class="cajasInputs">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" placeholder="Ingrese su nombre" />
+        </div>
+
+        <div class="cajasInputs">
+          <label for="email">Email:</label>
+          <input type="text" id="email" placeholder="Ingrese su email" />
+        </div>
+
+        <div class="cajasInputs">
+          <label for="telefono">Teléfono:</label>
+          <input type="text" id="telefono" placeholder="Ingrese su teléfono" />
+        </div>
+
+        <div class="cajasInputs">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" placeholder="Escriba su mensaje"></textarea>
+        </div>
+
+        <input type="submit" name="botonEnviar" id="botonFormulario" value="Enviar"/>
+      </form>
+    </div>
+
+    <script src="../funciones/contacto.js"></script>
+  </body>
+</html>
