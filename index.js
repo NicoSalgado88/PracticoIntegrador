@@ -15,7 +15,7 @@ function imgchange(num) {
         case -1:
             i--
             if (i == -1) {
-                i = arrayimg.length
+                i = arrayimg.length-1
             }
             imgchooser(i)
             break;

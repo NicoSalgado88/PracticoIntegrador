@@ -2,66 +2,75 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../global.css">
-    <link rel="icon" href="../imagenes/svg/logo.svg" />
-    <link rel="stylesheet" href="../estilos/contacto.css" />
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../global.css">
+  <link rel="icon" href="../imagenes/svg/logo.svg" />
+  <link rel="stylesheet" href="../estilos/contacto.css" />
+  <title>Document</title>
 </head>
 
-<body>
-    <header>
-        <div class="topnav">
-            <img src="../imagenes\png-jpg\logo trans.png" alt="" id="mainlogo">
-            <a href="../index.html" class="active">Inicio</a>
-            <a href="../paginas\entradas.html">Entradas</a>
-            <a href="../paginas\contacto.html">Contacto</a>
-            <a href="../paginas\esbozo.html">Holaola</a>
-        </div>
-    </header>
+<body onload=clear()>
+  <header>
+    <div class="topnav">
+      <img src="../imagenes\png-jpg\logo trans.png" alt="" id="mainlogo">
+      <a href="../index.html">Inicio</a>
+      <a href="../paginas\entradas.html">Entradas</a>
+      <a class="active">Contacto</a>
+      <a href="../paginas\esbozo.html">Holaola</a>
+    </div>
+  </header>
 
-    <div id="caja-formulario">
-        <h1 id="h1-contacto">Contacto</h1>
-  
-        <form id="formulario-contacto" method="post" action="#" onsubmit="">
-          <div class="cajasInputs">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" placeholder="Ingrese su nombre" />
-          </div>
-  
-          <div class="cajasInputs">
-            <label for="email">Email:</label>
-            <input type="text" id="email" placeholder="Ingrese su email" />
-          </div>
-  
-          <div class="cajasInputs">
-            <label for="telefono">Teléfono:</label>
-            <input type="text" id="telefono" placeholder="Ingrese su teléfono" />
-          </div>
-  
-          <div class="cajasInputs">
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" placeholder="Escriba su mensaje"></textarea>
-          </div>
-  
-          <input type="submit" name="botonEnviar" id="botonFormulario" value="Enviar"/>
-        </form>
+  <div id="caja-formulario">
+    <h1 id="h1-contacto">Contacto</h1>
+
+    <img src="../imagenes\ilustraciones\Pulpo.png" alt="">
+    <div id="text">Ya sea por una razón u otra, nuestro sitio está dispobnible para que usted puede contactarse.
+      <br>Ingrese sus datos y un colaborador se estará comunicando a más tardar, nunca.
+    </div>
+    <br>
+    <form id="formulario-contacto" method="post" action="#" onsubmit="">
+      <div class="cajasInputs">
+        <label for="nombre">Nombre: <span id="obligatory">*</span></label>
+        <input type="text" id="nombre" placeholder="Ingrese su nombre" onkeydown=keypressempty1()
+          onkeyup=keypressempty1() />
       </div>
-      <script src="../funciones/contacto.js"></script>
-        <!--- footer -->
-        <footer>
-          <hr>
-          <div class="social">
-              <p>Pueden seguirnos en: 
-              <a href="../paginas/esbozo.html"><img src="../imagenes/png-jpg/logos/LogoYT.png"></a>
-              <a href="../paginas/esbozo.html"></a><img src="../imagenes/png-jpg/logos/LogoTwit.png"></a>
-              <a href="../paginas/esbozo.html"></a><img src="../imagenes/png-jpg/logos/LogoInsta.png"></a>
-          </p>
-          </div>
-          <hr>
-          <img src="../imagenes/ilustraciones/Pie.png" alt="" id="sfoot">
-      </footer>
+
+      <div class="cajasInputs">
+        <label for="email">Email: <span id="obligatory">*</span></label>
+        <input type="text" id="email" placeholder="Ingrese su email" onkeydown=keypressemail()
+          onkeyup=keypressemail() />
+      </div>
+
+      <div class="cajasInputs">
+        <label for="telefono">Teléfono: <span id="obligatory">*</span></label>
+        <input type="text" id="telefono" placeholder="Ingrese su teléfono" onkeydown=keypresstel()
+          onkeyup=keypresstel() />
+      </div>
+
+      <div class="cajasInputs">
+        <label for="mensaje">Mensaje: <span id="obligatory">*</span></label>
+        <textarea id="mensaje" placeholder="Escriba su mensaje" onkeydown=keypressempty2()
+          onkeyup=keypressempty2()></textarea>
+      </div>
+
+      <input type="submit" name="botonEnviar" id="botonFormulario" value="Enviar" />
+    </form>
+  </div>
+  <script src="../funciones/contacto.js"></script>
+  <!--- footer -->
+  <footer>
+    <hr>
+    <div class="social">
+      <p>Pueden seguirnos en:
+        <a href="../paginas/esbozo.html"><img src="../imagenes/png-jpg/logos/LogoYT.png"></a>
+        <a href="../paginas/esbozo.html"></a><img src="../imagenes/png-jpg/logos/LogoTwit.png"></a>
+        <a href="../paginas/esbozo.html"></a><img src="../imagenes/png-jpg/logos/LogoInsta.png"></a>
+      </p>
+    </div>
+    <hr>
+    <img src="../imagenes/ilustraciones/Pie.png" alt="" id="sfoot">
+  </footer>
 </body>
 
 </html>
