@@ -9,7 +9,9 @@ function Total(){
     let total2=0 
     let total3=0
     if(menor==0 && mayor==0 && jubilado==0){
-        document.getElementsByName("errorcant").textContent="Ingrese una cantidad de entradas"
+        document.getElementById("errormenor").textContent="Ingrese una cantidad de entradas"
+        document.getElementById("errormayor").textContent="Ingrese una cantidad de entradas"
+        document.getElementById("errorjubilado").textContent="Ingrese una cantidad de entradas"
         error=false
         
     }
@@ -24,8 +26,11 @@ function Total(){
         return error
     }
 
-    total=total+total2+total3
+    total=total1+total2+total3
     console.log(total)
-    document.getElementById("total").textContent="Total a Pagar"+total
+    onclick=document.getElementById("pago").textContent=total
+    
+   return error
+  
 
 }
