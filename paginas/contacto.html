@@ -1,41 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../global.css">
     <link rel="icon" href="../imagenes/svg/logo.svg" />
     <link rel="stylesheet" href="../estilos/contacto.css" />
-  </head>
-  <body>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="topnav">
+            <img src="../imagenes\png-jpg\logo trans.png" alt="" id="mainlogo">
+            <a href="../index.html" class="active">Inicio</a>
+            <a href="../paginas\entradas.html">Entradas</a>
+            <a href="../paginas\contacto.html">Contacto</a>
+            <a href="../paginas\esbozo.html">Holaola</a>
+        </div>
+    </header>
+
     <div id="caja-formulario">
-      <h1 id="h1-contacto">Contacto</h1>
+        <h1 id="h1-contacto">Contacto</h1>
+  
+        <form id="formulario-contacto" method="post" action="#" onsubmit="">
+          <div class="cajasInputs">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre" />
+          </div>
+  
+          <div class="cajasInputs">
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Ingrese su email" />
+          </div>
+  
+          <div class="cajasInputs">
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" placeholder="Ingrese su teléfono" />
+          </div>
+  
+          <div class="cajasInputs">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" placeholder="Escriba su mensaje"></textarea>
+          </div>
+  
+          <input type="submit" name="botonEnviar" id="botonFormulario" value="Enviar"/>
+        </form>
+      </div>
+      <script src="../funciones/contacto.js"></script>
+        <!--- footer -->
+        <footer>
+          <hr>
+          <div class="social">
+              <p>Pueden seguirnos en: 
+              <a href="../paginas/esbozo.html"><img src="../imagenes/png-jpg/logos/LogoYT.png"></a>
+              <a href="../paginas/esbozo.html"></a><img src="../imagenes/png-jpg/logos/LogoTwit.png"></a>
+              <a href="../paginas/esbozo.html"></a><img src="../imagenes/png-jpg/logos/LogoInsta.png"></a>
+          </p>
+          </div>
+          <hr>
+          <img src="../imagenes/ilustraciones/Pie.png" alt="" id="sfoot">
+      </footer>
+</body>
 
-      <form id="formulario-contacto" method="post" action="#" onsubmit="">
-        <div class="cajasInputs">
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" placeholder="Ingrese su nombre" />
-        </div>
-
-        <div class="cajasInputs">
-          <label for="email">Email:</label>
-          <input type="text" id="email" placeholder="Ingrese su email" />
-        </div>
-
-        <div class="cajasInputs">
-          <label for="telefono">Teléfono:</label>
-          <input type="text" id="telefono" placeholder="Ingrese su teléfono" />
-        </div>
-
-        <div class="cajasInputs">
-          <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" placeholder="Escriba su mensaje"></textarea>
-        </div>
-
-        <input type="submit" name="botonEnviar" id="botonFormulario" value="Enviar"/>
-      </form>
-    </div>
-
-    <script src="../funciones/contacto.js"></script>
-  </body>
 </html>
