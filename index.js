@@ -24,7 +24,21 @@ function imgchange(num) {
 
 function imgchooser(num2) {
     let img1 = document.getElementById("imgcrs")
-    img1.src = arrayimg[num2]
+   
+    let steps=500;
+    let duration=750;
+    let opacityStep=1/steps;
+    let actualOpacity=0;
+
+    for (let step=0; step<=steps; step++) {
+        setTimeout(() => {
+            img1.style.opacity=actualOpacity;
+            actualOpacity += opacityStep;         
+    }, (step*duration/steps));
+    }
+    img1.src = arrayimg[num2];
+
+
     let img4
     for (let k = 0; k < arrayimg.length; k++) {
         img4 = document.getElementById(k)
