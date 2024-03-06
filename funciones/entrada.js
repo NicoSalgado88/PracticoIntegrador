@@ -19,7 +19,6 @@ function Total(){
     }
 
     if(isNaN(menor) || isNaN(mayor) || isNaN(jubilado)){
-        console.log(menor)
         document.getElementById("errormenor").textContent="Ingrese una cantidad de entradas en numeros"
         document.getElementById("errormayor").textContent="Ingrese una cantidad de entradas en numeros"
         document.getElementById("errorjubilado").textContent="Ingrese una cantidad de entradas en numeros"
