@@ -27,6 +27,9 @@ function Total(){
     }
 
     if(menor>0 || mayor>0 || jubilado>0){
+        document.getElementById("errormenor").textContent=""
+        document.getElementById("errormayor").textContent=""
+        document.getElementById("errorjubilado").textContent=""
         total1=13000*menor
         total2=16000*mayor
         total3=13000*jubilado
@@ -38,14 +41,14 @@ function Total(){
 
     total=total1+total2+total3
     console.log(total)
-    //document.getElementById("pago").textContent=total
-    //probando con crear un elemento 
+    document.getElementById("pago").textContent=total
+    /*probando con crear un elemento 
     const pag=document.createElement("p")
     pag.textContent="total a pagar: "+total
     const contpag=document.createElement("div")
     contpag.style.backgroundColor= "#6cb6ff"
     contpag.appendChild(pag)
-    entradaform.appendChild(contpag)
+    entradaform.appendChild(contpag)*/
    return error
   
 

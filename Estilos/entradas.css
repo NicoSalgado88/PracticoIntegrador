@@ -78,3 +78,9 @@ img{
 span{
     background-color: red;
 }
+
+table{
+    background-color: #6cb6ff;
+    font-family: "Montserrat", sans-serif;
+    position:absolute;
+}
