@@ -1,9 +1,21 @@
 
+
 #caja-formulario {
     background-color:#d2e9ff;;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url('../imagenes/ilustraciones/Cabeza.png');
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    animation: changeSaturation 10s infinite;
+}
+
+@keyframes changeSaturation {
+  0% { filter: saturate(100%); }
+  50% { filter: saturate(50%); }
+  100% { filter: saturate(100%); }
 }
 
 h1 {
