@@ -1,4 +1,5 @@
 function Total(){
+    event.preventDefault()
     let entradaform=document.forms["form-entradas"]
     let menor=entradaform["cantmenor"].value
     let mayor=entradaform["cantmayor"].value
@@ -8,12 +9,21 @@ function Total(){
     let total1=0 
     let total2=0 
     let total3=0
+    console.log(menor)
     if(menor==0 && mayor==0 && jubilado==0){
         document.getElementById("errormenor").textContent="Ingrese una cantidad de entradas"
         document.getElementById("errormayor").textContent="Ingrese una cantidad de entradas"
         document.getElementById("errorjubilado").textContent="Ingrese una cantidad de entradas"
         error=false
         
+    }
+
+    if(isNaN(menor) || isNaN(mayor) || isNaN(jubilado)){
+        console.log(menor)
+        document.getElementById("errormenor").textContent="Ingrese una cantidad de entradas en numeros"
+        document.getElementById("errormayor").textContent="Ingrese una cantidad de entradas en numeros"
+        document.getElementById("errorjubilado").textContent="Ingrese una cantidad de entradas en numeros"
+        error=false
     }
 
     if(menor>0 || mayor>0 || jubilado>0){
@@ -28,8 +38,14 @@ function Total(){
 
     total=total1+total2+total3
     console.log(total)
-    onclick=document.getElementById("pago").textContent=total
-    
+    //document.getElementById("pago").textContent=total
+    //probando con crear un elemento 
+    const pag=document.createElement("p")
+    pag.textContent="total a pagar: "+total
+    const contpag=document.createElement("div")
+    contpag.style.backgroundColor= "#6cb6ff"
+    contpag.appendChild(pag)
+    entradaform.appendChild(contpag)
    return error
   
 
