@@ -6,7 +6,7 @@
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-image: url('../imagenes/ilustraciones/Cabeza.png');
-    background-repeat: repeat;
+    
     background-position: center;
     background-size: cover;
     animation: changeSaturation 10s infinite;
@@ -18,9 +18,10 @@
   100% { filter: saturate(100%); }
 }
 
-h1 {
+h1, h4 {
     text-align: left;
     display: block;
+    font-family: "Montserrat", sans-serif;
 }
 
 form {
@@ -63,24 +64,18 @@ button {
     cursor: pointer;
 }
 
-.imagen {
-    float: left;
-    position: relative;
-    text-align: center;
-    color: white;
-}
 
-.texto {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 24px;
-}
-
-img{
+img {
     width: 50px;
     height: 50px;
+    float: left;
+    position:relative;
+    text-align: center;
+}
+#ballena{
+    margin-right: auto;
+    width: 20%;
+    height: 20%;
 }
 
 #boton, #caja-formulario{
