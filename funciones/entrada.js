@@ -41,7 +41,7 @@ function Total(){
 
     total=total1+total2+total3
     console.log(total)
-    document.getElementById("pago").textContent=total
+    document.getElementById("pago").textContent="Total a Pagar: "+total
     /*probando con crear un elemento 
     const pag=document.createElement("p")
     pag.textContent="total a pagar: "+total
