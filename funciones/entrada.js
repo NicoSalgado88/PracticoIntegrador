@@ -1,5 +1,5 @@
 function Total() {
-    event.preventDefault()
+    //event.preventDefault()
     let entradaform = document.forms["form-entradas"]
     let menor = entradaform["cantmenor"].value
     let mayor = entradaform["cantmayor"].value
@@ -10,11 +10,26 @@ function Total() {
     let total2 = 0
     let total3 = 0
 
+    if(isNaN(menor) || menor<0){
+        document.getElementById("errormenor").textContent="Ingrese una cantidad de entradas en numeros"
+       // document.getElementById("errormayor").textContent="Ingrese una cantidad de entradas en numeros"
+        //document.getElementById("errorjubilado").textContent="Ingrese una cantidad de entradas en numeros"
+        return false
+    }
+    if(isNaN(mayor) || mayor<0){
+        document.getElementById("errormayor").textContent="Ingrese una cantidad de entradas en numeros"
+        return false
+    }
+    if (isNaN(jubilado) || jubilado<0){
+        document.getElementById("errorjubilado").textContent="Ingrese una cantidad de entradas en numeros"
+        return false
+    }
+
     if (menor == 0 && mayor == 0 && jubilado == 0) {
         document.getElementById("errormenor").textContent = "Ingrese una cantidad de entradas"
         document.getElementById("errormayor").textContent = "Ingrese una cantidad de entradas"
         document.getElementById("errorjubilado").textContent = "Ingrese una cantidad de entradas"
-        error = false
+        return false
 
     }
 /*
@@ -36,20 +51,7 @@ function Total() {
     }
 */
     
-        if(isNaN(menor)){
-            document.getElementById("errormenor").textContent="Ingrese una cantidad de entradas en numeros"
-           // document.getElementById("errormayor").textContent="Ingrese una cantidad de entradas en numeros"
-            //document.getElementById("errorjubilado").textContent="Ingrese una cantidad de entradas en numeros"
-            error=false
-        }
-        if(isNaN(mayor)){
-            document.getElementById("errormayor").textContent="Ingrese una cantidad de entradas en numeros"
-            error=false
-        }
-        if (isNaN(jubilado)){
-            document.getElementById("errorjubilado").textContent="Ingrese una cantidad de entradas en numeros"
-            error=false
-        }
+     
     
     if (menor > 0 || mayor > 0 || jubilado > 0) {
         document.getElementById("errormenor").textContent = ""

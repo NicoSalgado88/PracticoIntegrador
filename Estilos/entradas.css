@@ -17,11 +17,17 @@
   50% { filter: saturate(50%); }
   100% { filter: saturate(100%); }
 }
+/*
+@font-face {
+    font-family: "sirena";
+    src: url(../otros/font/Mermaid1001.ttf);
+}*/
 
 h1, h4 {
     text-align: left;
     display: block;
-    font-family: "Montserrat", sans-serif;
+    font-family: "sirena", sans-serif;
+    
 }
 
 form {
@@ -31,13 +37,15 @@ form {
 }
 
 div {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    
 }
 
 label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    font-family: "sirena", sans-serif;
 }
 
 input:focus{
@@ -62,6 +70,7 @@ button {
     color: #fff;
     font-size: 16px;
     cursor: pointer;
+    font-family: "sirena", sans-serif;
 }
 
 
@@ -72,11 +81,7 @@ img {
     position:relative;
     text-align: center;
 }
-#ballena{
-    margin-right: auto;
-    width: 20%;
-    height: 20%;
-}
+
 
 #boton, #caja-formulario{
     display: flex;
@@ -84,5 +89,7 @@ img {
 
 span{
     background-color: red;
+    font-size: 16px;
+    display: block;
 }
 
