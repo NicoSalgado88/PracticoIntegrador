@@ -13,6 +13,7 @@ img#sfoot {
 }
 
 hr#hfoot {
+    clear: both;
     color: #1e8fff;
     border-style: solid;
     height: 0.001px;
@@ -75,9 +76,16 @@ div.social {
     text-align: left;
 }
 
-div.social img {
+div.social img.social {
     max-height: 10%;
     height: 2%;
     width: 2%;
     padding-left: 1%;
+}
+
+img.logo {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 30px;
+    width: 10%;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +9,24 @@
     <link rel="stylesheet" href="../estilos/juego.css" />
     <title>Juego</title>
 </head>
-<body onload="divmaker()">
-    <h4>juego</h4>
-    <p>es un juego</p>
 
-    <span id = "gamespan2"></span>
+<body onload="divmaker(), header(), footer()">
+    <header id="JuegoH"></header>
+    <h4>¿Te parece saberlo todo sobre animales acuáticos?</h4>
+    <p>¡Ponte a prueba!</p>
+    <div id="box">
+        <span id="gamespan2"></span>
 
-    <div id = "gamediv"></div>
-    <br>
-    <span id = "gamespan"></span>
+        <div id="gamediv"></div>
+        <br>
+        <span id="gamespan"></span>
 
-    <div id="next" onclick="quizmaker()" class="on">Siguiente</div>
+        <div id="next" onclick="quizmaker()" class="on">Siguiente</div>
+    </div>
 
     <script src="../funciones/juego.js"></script>
+    <footer id="JuegoF"></footer>
 </body>
+<script src="../funciones/headfoot.js"></script>
+
 </html>
