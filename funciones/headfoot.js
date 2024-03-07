@@ -4,8 +4,8 @@ let links = [{
 { link: "../paginas/contacto.html", name: "Contacto" }, { link: "../paginas/juegomenu.html", name: "Actividades" }
 ]
 
-let social = ["../imagenes/png-jpg/logos/LogoYT.png", "../imagenes/png-jpg/logos/LogoTwit.png", "../imagenes/png-jpg/logos/LogoInsta.png"]
-
+let social = ["imagenes/png-jpg/logos/LogoYT.png", "../imagenes/png-jpg/logos/LogoTwit.png", "../imagenes/png-jpg/logos/LogoInsta.png"]
+ 
 
 function header() {
     //make head
