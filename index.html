@@ -9,11 +9,11 @@
     <title>Document</title>
 </head>
 
-<body>
+<body onload="imgt()">
     <header>
         <div class="topnav">
             <img src="imagenes\png-jpg\logo trans.png" alt="" id="mainlogo">
-            <a href="index.html" class="active">Inicio</a>
+            <a class="active">Inicio</a>
             <a href="paginas\entradas.html">Entradas</a>
             <a href="paginas\contacto.html">Contacto</a>
             <a href="paginas\esbozo.html">Holaola</a>
@@ -31,37 +31,52 @@
         <div>
             <div id="main2">
                 <img src="imagenes\ilustraciones\Burbuja1.png" alt="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni quam culpa nobis exercitationem delectus
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni quam culpa nobis exercitationem
+                delectus
                 mollitia, itaque recusandae minima tempore ipsam atque sit explicabo dolorem expedita cum, iure, eum
                 impedit.
-            </div> 
-            
+            </div>
+
             <div id="main3">
                 <img src="imagenes\ilustraciones\Burbuja3.png" alt="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni quam culpa nobis exercitationem delectus
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni quam culpa nobis exercitationem
+                delectus
                 mollitia, itaque recusandae minima tempore ipsam atque sit explicabo dolorem expedita cum, iure, eum
                 impedit.
             </div>
         </div>
 
-        <!--- carousel -->
-        <div id="carousel">
-        <div id="divimg">
-            <img src="imagenes\png-jpg\Ballena Beluga.jpg" alt="">
-            <img src="imagenes\png-jpg\Ballena Beluga.jpg" alt="">
-            <img src="imagenes\png-jpg\Ballena Beluga.jpg" alt="">
-        </div>
-        <div id="next" onclick="imgchange(+1)">˃</div>
-        <div id="previous" onclick="imgchange(-1)">˂</div>
-        </div>
+        <h3 id="maintitle">Galería</h5>
 
-        <!--- footer -->
-        <footer>
-            <hr>
-            <p>Redes sociales bla bla bal bla vla </p>
-            <hr>
-            <img src="imagenes\ilustraciones\Pie.png" alt="" id="sfoot">
-        </footer>
+            <!--- carousel -->
+            <div id="carousel">
+                <div id="divimg">
+                    <img src="imagenes\png-jpg\edificio2.jpg" alt="" id="imgcrs">
+                </div>
+                <br>
+            </div>
+            <div id="thumbnailcrs"></div>
+            <div id="btn1">
+                <div onclick="imgchange(-1)" class="crs">˂</div>
+                <div onclick="imgchange(+1)" class="crs">></div>
+            </div>
+
+
+            <!--- footer -->
+            <footer>
+                <hr>
+                <div class="social">
+                    <p>Pueden seguirnos en: 
+                    <a href="paginas\esbozo.html"><img src="imagenes\png-jpg\logos\LogoYT.png"></a>
+                    <a href="paginas\esbozo.html"></a><img src="imagenes\png-jpg\logos\LogoTwit.png"></a>
+                    <a href="paginas\esbozo.html"></a><img src="imagenes\png-jpg\logos\LogoInsta.png"></a>
+                </p>
+                </div>
+                <hr>
+                <img src="imagenes\ilustraciones\Pie.png" alt="" id="sfoot">
+            </footer>
 </body>
+
+<script src="index.js"></script>
 
 </html>

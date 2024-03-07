@@ -5,50 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entradas</title>
     <link rel="stylesheet" type="text/css" href="../Estilos/entradas.css">
+    <link rel="stylesheet" type="text/css" href="../global.css">
     <link rel="icon" href="../imagenes/svg/logo.svg">
+    <script src="../funciones/entrada.js"></script>
 </head>
 <body>
+    <header>
+        <div class="topnav">
+            <img src="../imagenes/png-jpg/logo trans.png" alt="" id="mainlogo">
+            <a href="../index.html">Inicio</a>
+            <a class="active">Entradas</a>
+            <a href="../paginas/contacto.html">Contacto</a>
+            <a href="../paginas/esbozo.html">Holaola</a>
+        </div>
+    </header>
     <div id="caja-formulario">
+       
         <form id="form-entradas" action="#" onsubmit="return Total()" method="post">
             <div id="menores">
-                <div class="imagen"></div>
+                <div class="imagen"><img src="../imagenes/ilustraciones/Burbuja1.png"></div>
+
                 <div id="contmenor">
                     <h1>Menores ($13.000)</h1>
-                    <p>Menores entre 5 a 10 años</p>
-                    <label for="cantmenor">Ingrese la cantidad de entradas</label>
-                    <input type="number" id="cantmenor" name="cantmenor">
-                    <span class="errorcant"></span>
+                    <h4>Menores entre 5 a 10 años</h4>
+                    <label for="cantmenor">Ingrese la cantidad de entradas</label><br>
+                    <input type="" id="cantmenor" name="cantmenor">
+                    <span id="errormenor"></span>
                 </div>
             </div>
             <div id="mayores">
-                <div class="imagen"></div>
+                <div class="imagen"><img src="../imagenes/ilustraciones/Burbuja1.png"></div>
+
                 <div id="contmayor">
                     <h1>Mayores ($16.000)</h1>
-                    <p>Mayores entre 11 a 65 años</p>
+                    <h4>Mayores entre 11 a 65 años</h4>
                     <label for="cantmayor">Ingrese la cantidad de entradas</label>
-                    <input type="number" id="cantmayor" name="cantmayor">
-                    <span class="errorcant"></span>
+                    <input type="" id="cantmayor" name="cantmayor">
+                    <span id="errormayor"></span>
                 </div>
             </div>
             <div id="jubilados">
-                <div class="imagen">
-                    
-                </div>
+                <div class="imagen"><img src="../imagenes/ilustraciones/Burbuja1.png"></div>
                 <div id="contjubilados">
                     <h1>Jubilados ($13.000)</h1>
-                    <p>Mayores de 65 años</p>
+                    <h4>Mayores de 65 años</h4>
                     <label for="cantjubilados">Ingrese la cantidad de entradas</label>
-                    <input type="number" id="cantjubilados" name="cantjubilados">
-                    <span class="errorcant"></span>
+                    <input type="" id="cantjubilados" name="cantjubilados">
+                    <span id="errorjubilado"></span>
                 </div>
             </div>
             <div id="boton">
                 <img src="../imagenes/ilustraciones/Estrella.png">
-                <button type="submit">Total a pagar</button>
-                <span id="total"></span>
+                <button type="submit" id="pago">Total a Pagar:</button>   
             </div>
+           
         </form>
+       
     </div>
+
+   
+
+    <footer>
+        <hr>
+        <div class="social">
+            <p>Pueden seguirnos en: 
+            <a href="../paginas\esbozo.html"><img src="../imagenes\png-jpg\logos\LogoYT.png"></a>
+            <a href="../paginas\esbozo.html"></a><img src="../imagenes\png-jpg\logos\LogoTwit.png"></a>
+            <a href="../paginas\esbozo.html"></a><img src="../imagenes\png-jpg\logos\LogoInsta.png"></a>
+        </p>
+        </div>
+        <hr>
+        <img src="../imagenes\ilustraciones\Pie.png" alt="" id="sfoot">
+    </footer>
    
 </body>
 </html>
