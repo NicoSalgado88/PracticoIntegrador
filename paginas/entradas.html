@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,18 +10,11 @@
     <link rel="icon" href="../imagenes/svg/logo.svg">
     <script src="../funciones/entrada.js"></script>
 </head>
-<body>
-    <header>
-        <div class="topnav">
-            <img src="../imagenes/png-jpg/logo trans.png" alt="" id="mainlogo">
-            <a href="../index.html">Inicio</a>
-            <a class="active">Entradas</a>
-            <a href="../paginas/contacto.html">Contacto</a>
-            <a href="../paginas/esbozo.html">Holaola</a>
-        </div>
-    </header>
+
+<body onload="header(), footer()">
+    <header id="EntradasH"></header>
     <div id="caja-formulario">
-       
+
         <form id="form-entradas" action="#" onsubmit="return Total()" method="post">
             <div id="menores">
                 <div class="imagen"><img src="../imagenes/ilustraciones/Burbuja1.png"></div>
@@ -56,27 +50,18 @@
             </div>
             <div id="boton">
                 <img src="../imagenes/ilustraciones/Estrella.png">
-                <button type="submit" id="pago">Total a Pagar:</button>   
+                <button type="submit" id="pago">Total a Pagar:</button>
             </div>
-           
+
         </form>
-       
+
     </div>
 
-   
+    <!--- footer -->
+    <footer id="EntradasF"></footer>
 
-    <footer>
-        <hr>
-        <div class="social">
-            <p>Pueden seguirnos en: 
-            <a href="../paginas\esbozo.html"><img src="../imagenes\png-jpg\logos\LogoYT.png"></a>
-            <a href="../paginas\esbozo.html"></a><img src="../imagenes\png-jpg\logos\LogoTwit.png"></a>
-            <a href="../paginas\esbozo.html"></a><img src="../imagenes\png-jpg\logos\LogoInsta.png"></a>
-        </p>
-        </div>
-        <hr>
-        <img src="../imagenes\ilustraciones\Pie.png" alt="" id="sfoot">
-    </footer>
-   
 </body>
+
+<script src="../funciones/headfoot.js"></script>
+
 </html>

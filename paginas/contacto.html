@@ -7,20 +7,11 @@
   <link rel="stylesheet" type="text/css" href="../global.css">
   <link rel="icon" href="../imagenes/svg/logo.svg" />
   <link rel="stylesheet" href="../estilos/contacto.css" />
-  <title>Document</title>
+  <title>Contacto</title>
 </head>
 
-<body onload=clear()>
-  <header>
-    <div class="topnav">
-      <img src="../imagenes\png-jpg\logo trans.png" alt="" id="mainlogo">
-      <a href="../index.html">Inicio</a>
-      <a href="../paginas\entradas.html">Entradas</a>
-      <a class="active">Contacto</a>
-      <a href="../paginas\esbozo.html">Holaola</a>
-    </div>
-  </header>
-
+<body onload="header(), footer()">
+  <header id="ContactoH"></header>
   <div id="caja-formulario">
     <h1 id="h1-contacto">Contacto</h1>
 
@@ -58,19 +49,11 @@
     </form>
   </div>
   <script src="../funciones/contacto.js"></script>
+
   <!--- footer -->
-  <footer>
-    <hr>
-    <div class="social">
-      <p>Pueden seguirnos en:
-        <a href="../paginas/esbozo.html"><img src="../imagenes/png-jpg/logos/LogoYT.png"></a>
-        <a href="../paginas/esbozo.html"></a><img src="../imagenes/png-jpg/logos/LogoTwit.png"></a>
-        <a href="../paginas/esbozo.html"></a><img src="../imagenes/png-jpg/logos/LogoInsta.png"></a>
-      </p>
-    </div>
-    <hr>
-    <img src="../imagenes/ilustraciones/Pie.png" alt="" id="sfoot">
-  </footer>
+  <footer id="ContactoF"></footer>
 </body>
+
+<script src="../funciones/headfoot.js"></script>
 
 </html>

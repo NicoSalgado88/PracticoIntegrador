@@ -12,7 +12,7 @@ img#sfoot {
     height: 100%;
 }
 
-hr {
+hr#hfoot {
     color: #1e8fff;
     border-style: solid;
     height: 0.001px;

@@ -4,21 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="global.css">
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <title>Document</title>
+    <link rel="icon" href="../imagenes/svg/logo.svg" />
+    <link rel="stylesheet" type="text/css" href="../global.css">
+    <link rel="stylesheet" type="text/css" href="../Estilos/index.css">
+    <title id="title">Inicio</title>
 </head>
 
-<body onload="imgt()">
-    <header>
-        <div class="topnav">
-            <img src="imagenes\png-jpg\logo trans.png" alt="" id="mainlogo">
-            <a class="active">Inicio</a>
-            <a href="paginas\entradas.html">Entradas</a>
-            <a href="paginas\contacto.html">Contacto</a>
-            <a href="paginas\esbozo.html">Holaola</a>
-        </div>
-    </header>
+<body onload="imgt(), header(), footer()">
+
+    <header id="InicioH"></header>
 
     <h3 id="maintitle">Bienvenido a nuestro sitio</h5>
         <div id="main1">
@@ -63,20 +57,10 @@
 
 
             <!--- footer -->
-            <footer>
-                <hr>
-                <div class="social">
-                    <p>Pueden seguirnos en: 
-                    <a href="paginas\esbozo.html"><img src="imagenes\png-jpg\logos\LogoYT.png"></a>
-                    <a href="paginas\esbozo.html"></a><img src="imagenes\png-jpg\logos\LogoTwit.png"></a>
-                    <a href="paginas\esbozo.html"></a><img src="imagenes\png-jpg\logos\LogoInsta.png"></a>
-                </p>
-                </div>
-                <hr>
-                <img src="imagenes\ilustraciones\Pie.png" alt="" id="sfoot">
-            </footer>
+            <footer id="InicioF"></footer>
 </body>
 
-<script src="index.js"></script>
+<script src="../funciones/index.js"></script>
+<script src="../funciones/headfoot.js"></script>
 
 </html>
