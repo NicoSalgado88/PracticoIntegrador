@@ -8,6 +8,9 @@ function Total() {
     let mayor = entradaform["cantmayor"].value
     let jubilado = entradaform["cantjubilados"].value
     let factura=document.getElementById("factura")
+    while(factura.hasChildNodes()){
+        factura.removeChild(factura.lastChild)
+    }
     let error = true
     let total = 0
     let total1 = 0
@@ -61,15 +64,16 @@ function Total() {
     ", Jubilados: "+jubilado
     pfactura.style.fontSize="20px"
     let tfactura=document.createElement("h3")
-    tfactura.textContent="Total a Pagar: $"+total
+    
     factura.appendChild(divfac)
     divfac.appendChild(pfactura)
     divfac.appendChild(tfactura)
 
-    /*var submitb=document.createElement("button")
-    submitb.type="submit"
+    var submitb=document.createElement("button")
+    submitb.type="button"
+    submitb.onclick=()=>{tfactura.textContent="Total Pagado: $"+total}
     submitb.textContent="Realizar Pago"
-    factura.appendChild(submitb)*/
+    factura.appendChild(submitb)
 
     return error
      
