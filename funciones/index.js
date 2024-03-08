@@ -1,5 +1,5 @@
-arrayimg = ["imagenes/png-jpg/edificio2.jpg", "imagenes/png-jpg/Ballena Beluga.jpg",
-    "imagenes/png-jpg/edificio1.png"]
+arrayimg = ["./imagenes/png-jpg/edificio2.jpg", "./imagenes/png-jpg/Ballena Beluga.jpg",
+    "./imagenes/png-jpg/edificio1.png"]
 
 i = 0
 
@@ -23,9 +23,6 @@ function imgchange(num) {
 }
 
 function imgchooser(num2) {
-    //if (num2=!i) {
-    //console.log("ada")
-    //}
     let img1 = document.getElementById("imgcrs")
    
     let steps=500;
