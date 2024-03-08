@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Limpia el formulario
         clear();
     });
+});
 
 function mostrarDatosEnviados(nombre, email, telefono, mensaje) {
     let datosEnviados = document.createElement("div");
@@ -58,4 +59,3 @@ function mostrarDatosEnviados(nombre, email, telefono, mensaje) {
     datosEnviados.innerHTML += "<p>Mensaje: " + mensaje + "</p>";
     document.getElementById("caja-formulario").appendChild(datosEnviados);
 }
-});
