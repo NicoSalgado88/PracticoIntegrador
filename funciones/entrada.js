@@ -1,9 +1,13 @@
+//const p=document.getElementById("pago")
+//p.addEventListener("click",Total)
 function Total() {
-    //event.preventDefault()
+    try{
+    event.preventDefault()
     let entradaform = document.forms["form-entradas"]
     let menor = entradaform["cantmenor"].value
     let mayor = entradaform["cantmayor"].value
     let jubilado = entradaform["cantjubilados"].value
+    let factura=document.getElementById("factura")
     let error = true
     let total = 0
     let total1 = 0
@@ -32,26 +36,7 @@ function Total() {
         return false
 
     }
-/*
-    try {
-        if (isNaN(menor)) {
-            throw new Error("Ingrese una cantidad de entradas en números");
-        }
-        if (isNaN(mayor)) {
-            throw new Error("Ingrese una cantidad de entradas en números");
-        }
-        if (isNaN(jubilado)) {
-            throw new Error("Ingrese una cantidad de entradas en números");
-        }
-    } catch (e) {
-        document.getElementById("errormenor").textContent = e.message;
-        document.getElementById("errormayor").textContent = e.message;
-        document.getElementById("errorjubilado").textContent = e.message;
-        error = false;
-    }
-*/
-    
-     
+   
     
     if (menor > 0 || mayor > 0 || jubilado > 0) {
         document.getElementById("errormenor").textContent = ""
@@ -67,9 +52,30 @@ function Total() {
     }
 
     total = total1 + total2 + total3
-    //console.log(total)
-    document.getElementById("pago").textContent = "Total a Pagar: " + total
-    return error
+    
+    //document.getElementById("pago").textContent = "Total a Pagar: " + total
 
+    const divfac=document.createElement("div")
+    let pfactura=document.createElement("h4")
+    pfactura.textContent="Cantidad de entradas- Menor: "+menor+", Mayor: "+mayor+
+    ", Jubilados: "+jubilado
+    pfactura.style.fontSize="20px"
+    let tfactura=document.createElement("h3")
+    tfactura.textContent="Total a Pagar: $"+total
+    factura.appendChild(divfac)
+    divfac.appendChild(pfactura)
+    divfac.appendChild(tfactura)
+
+    /*var submitb=document.createElement("button")
+    submitb.type="submit"
+    submitb.textContent="Realizar Pago"
+    factura.appendChild(submitb)*/
+
+    return error
+     
+    }catch(e){
+        alert("error")
+        return false
+    }
 
 }
