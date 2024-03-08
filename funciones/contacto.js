@@ -1,5 +1,3 @@
-contactobject = {name: "", email: "", tel: "", msg: ""}
-
 function clear() {
     let nombre = document.getElementById("nombre")
     let email = document.getElementById("email")
@@ -57,13 +55,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Si la validación es exitosa, enviar el formulario
         alert("Se ha enviado correctamente.");
-        contactobject.name=nombre
-        contactobject.tel=telefono
-        contactobject.email=email
-        contactobject.msg=mensaje
         document.getElementById("formulario-contacto").submit();
         clear()
-
     });
 });
 
@@ -73,10 +66,10 @@ function keypressemail() {
     let patronEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!patronEmail.test(email)) {
         email = document.getElementById("email")
-        //console.log("eh")
+        console.log("eh")
         email.style.backgroundColor = "#ffaea8"
     } else if (patronEmail.test(email)) {
-        //console.log("yay")
+        console.log("yay")
         email = document.getElementById("email")
         email.style.backgroundColor = "white"
     }
