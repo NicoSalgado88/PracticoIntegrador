@@ -23,24 +23,28 @@
     <form id="formulario-contacto" method="post" action="#" onsubmit="">
       <div class="cajasInputs">
         <label for="nombre">Nombre: <span id="obligatory">*</span></label>
-        <input type="text" id="nombre" placeholder="Ingrese su nombre" />
+        <input type="text" id="nombre" placeholder="Ingrese su nombre" onkeydown=keypressempty1()
+          onkeyup=keypressempty1() />
       </div>
-    
+
       <div class="cajasInputs">
         <label for="email">Email: <span id="obligatory">*</span></label>
-        <input type="text" id="email" placeholder="Ingrese su email" />
+        <input type="text" id="email" placeholder="Ingrese su email" onkeydown=keypressemail()
+          onkeyup=keypressemail() />
       </div>
-    
+
       <div class="cajasInputs">
         <label for="telefono">Teléfono: <span id="obligatory">*</span></label>
-        <input type="text" id="telefono" placeholder="Ingrese su teléfono" />
+        <input type="text" id="telefono" placeholder="Ingrese su teléfono" onkeydown=keypresstel()
+          onkeyup=keypresstel() />
       </div>
-    
+
       <div class="cajasInputs">
         <label for="mensaje">Mensaje: <span id="obligatory">*</span></label>
-        <textarea id="mensaje" placeholder="Escriba su mensaje"></textarea>
+        <textarea id="mensaje" placeholder="Escriba su mensaje" onkeydown=keypressempty2()
+          onkeyup=keypressempty2()></textarea>
       </div>
-    
+
       <input type="submit" name="botonEnviar" id="botonFormulario" value="Enviar" />
     </form>
   </div>
@@ -50,6 +54,6 @@
   <footer id="ContactoF"></footer>
 </body>
 
-<script src="../funciones/headfoot.js"></script>
+<script src="../headfoot.js"></script>
 
 </html>
