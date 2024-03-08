@@ -38,7 +38,6 @@ form {
 
 div {
     margin-bottom: 20px;
-    
 }
 
 label {
@@ -62,15 +61,17 @@ input {
 }
 
 button {
-    width: 100%;
+    width: 60%;
+    height: 10%;
     padding: 10px;
     border: none;
     border-radius: 5px;
     background-color: #007bff;
     color: #fff;
-    font-size: 16px;
     cursor: pointer;
-    font-family: "sirena", sans-serif;
+    font-family: "Mermaid", sans-serif;
+    font-size: 130%;
+    margin: auto;
 }
 
 

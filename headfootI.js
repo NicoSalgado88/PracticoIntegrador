@@ -1,10 +1,10 @@
 let links = [{
-    link: "../index.html", name: "Inicio"
-}, { link: "../paginas/entradas.html", name: "Entradas" },
-{ link: "../paginas/contacto.html", name: "Contacto" }, { link: "../paginas/juegomenu.html", name: "Actividades" }
+    link: "index.html", name: "Inicio"
+}, { link: "paginas/entradas.html", name: "Entradas" },
+{ link: "paginas/contacto.html", name: "Contacto" }, { link: "paginas/juegomenu.html", name: "Actividades" }
 ]
 
-let social = ["../imagenes/png-jpg/logos/LogoYT.png", "../imagenes/png-jpg/logos/LogoTwit.png", "../imagenes/png-jpg/logos/LogoInsta.png"]
+let social = ["imagenes/png-jpg/logos/LogoYT.png", "imagenes/png-jpg/logos/LogoTwit.png", "imagenes/png-jpg/logos/LogoInsta.png"]
  
 
 function header() {
@@ -16,7 +16,7 @@ function header() {
     head.appendChild(div1)
     //make img
     let div2 = document.createElement("img")
-    div2.setAttribute("src", "../imagenes/png-jpg/logo trans.png")
+    div2.setAttribute("src", "imagenes/png-jpg/logo trans.png")
     div2.setAttribute("id", "mainlogo")
     div1.appendChild(div2)
     //make links
@@ -52,7 +52,7 @@ function footer() {
     //create a's and imgs
     for (let j = 0; j < social.length; j++) {
         let a = document.createElement("a")
-        a.setAttribute("href", "../paginas/esbozo.html")
+        a.setAttribute("href", "paginas/esbozo.html")
         let img = document.createElement("img")
         img.setAttribute("src", social[j])
         img.setAttribute("class", "social")
@@ -65,7 +65,7 @@ function footer() {
     div1.appendChild(hr2)
     //make bottom img
     let imgb = document.createElement("img")
-    imgb.setAttribute("src", "../imagenes/ilustraciones/Pie.png")
+    imgb.setAttribute("src", "imagenes/ilustraciones/Pie.png")
     imgb.setAttribute("id", "sfoot")
     foot.appendChild(imgb)
 
@@ -81,11 +81,11 @@ function footer() {
     foot.appendChild(divpj2)
     //make logos
     logo1 = document.createElement("img")
-    logo1.setAttribute("src", "../imagenes/logos/sanluis.png")
+    logo1.setAttribute("src", "imagenes/logos/sanluis.png")
     logo1.setAttribute("class", "logo")
     foot.appendChild(logo1)
     logo2 = document.createElement("img")
-    logo2.setAttribute("src", "../imagenes/logos/cocacola.png")
+    logo2.setAttribute("src", "imagenes/logos/cocacola.png")
     logo2.setAttribute("class", "logo")
     foot.appendChild(logo2)
 
